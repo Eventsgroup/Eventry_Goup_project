@@ -254,7 +254,10 @@ a{
   padding-top: 2px;
   text-align:center;
 }
-
+.bazzar p{
+  padding-top: 2px;
+  text-align:center;
+}
 /*class and sightseeing*/
 
 .cc, .dc, .oc, .hike,.vhp, .tas,.bea, .gec, .ib{
