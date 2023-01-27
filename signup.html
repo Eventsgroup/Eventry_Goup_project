@@ -4,61 +4,83 @@
 <title>EVENTY-Signup</title>
 <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" type="text/css" href="styling.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+            <!--<link rel="stylesheet" type="text/css" href="styling.css" />-->
         <meta name="descripition" content="EVENTY-signup" >
 
   
 </head>
+<header class="bg-danger">
+  <div  class="sticky  " >
+    <div  class="container-fluid">
+      <div class="row ">
+       <div class="col-sm-8" class="logo" style="margin-left: -15px;">
+           <img src="images\Screenshot (32).png" class="rounded-circle" alt="logo" width="70" height="70" > <div class="find"><h4> Find events</h4></div>
+         </div> 
+        
+        
+<nav class="col-sm-4">
+    <ul class="nav justify-content-end nav-flex-row nav-pills">
+       <li class="nav-item">
+    <a class="nav-link" href="homepage.html"><b>HOME</b></a></li>
+       <li class="nav-item">
+    <a class="nav-link" href="login page.html"><b>LOGIN</b></a></li>
+       <li class="nav-item">
+     <a class="nav-link" href="aboutus.html"><b>ABOUT US</b></a></li>
+       <li class="nav-item">
+      <a class="nav-link" href="aboutus.html"><b>CONTACT US</b></a></li>
+       </ul>                     
+       </nav> </div>
+  </div>
+  </div>  
+  </header>
 
-<div  class="sticky" >
-    
-    <div class="logo">
-        <img src="images\Screenshot (32).png" alt="logo" width="70" height="70"><div class="find"><h4> Find events</h4></div>
-    </div> 
-<br>
 
-    
-    <nav>
-
-    <ul class="nav">
-        <a href="homepage.html"><b> HOME</b><a>
-        <a href="login page.html"><b>LOGIN</b><a>
-        <a href="aboutus.html"><b>ABOUT US</b><a> 
-        <a href="aboutus.html"><b>CONTACT US</b><a>
-        </div>                      
-    </nav>
+<body class="bg-info">
+  <section class="vh-100 "  >
+    <div class="container ">
+      <div class="row d-flex justify-content-center align-items-center h-100 bg-dark">
+        <div class="col-10 col-md-8 col-lg-6 col-xl-5">
+          
+            <div class="card-body p-5 text-center">
   
-</div> 
-</div>
-
-
-<body class="x">
-    <div class="box2" >
-        <form name="formsign" class="form" >
-    
-     <h3>Sign Up</h3>
-     <div class="inputboxsign">
-    <label for="fname+lname">Name</label>
-      <input type="text"  name="Name" id="name" placeholder="your name.."><br>
+              <h3 class="mb-5">Sign up</h3>
+  <br>
+    <div class="form-outline mb-4">
+      <input type="name" id="name" placeholder="your name.." required class="form-control form-control-lg" />
+      <label class="form-label" for="name">Name</label>
     </div>
-    
-    <div class="inputboxsign">
-      <label for="email">E-mail</label>
-      <input type="text" name="text1" id="email" placeholder="example@gmail.com" required="required"><br>
+  <br>
+   <div class="form-outline mb-4">
+    <input type="email" id="email" placeholder="example@gmail.com" required class="form-control form-control-lg" />
+    <label class="form-label" for="email">Email</label>
+   </div>
+   <br>
+   <div class="form-outline mb-4">
+    <input type="Username" id="username" placeholder="username" required class="form-control form-control-lg" />
+    <label class="form-label"   for="username">Username</label>
+   </div>
+   <br>
+      <div class="form-outline mb-4">
+         <input type="password" id="password" placeholder="password" required class="form-control form-control-lg" />
+         <label class="form-label" for="Password">Password</label>
+        </div>
+             
+        <br>
+        <br>
+        <input type="submit" onclick="signup()" class="btn btn-primary btn-lg btn-block"  value="Signup" class="submitbutton" >
+              
+  
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-      
-    <div class="inputboxsign">
-      <label for="username">username</label>
-      <input type="text"  id="username" placeholder="username" required="required"><br>
-    </div>
-    <div class="inputbox2">
-      <label for="pwd">Password:</label>
-        <input type="password" id="password"  placeholder="password" minlength="8" required="required"><br>
-     </div>
-     <br>
-      <input type="submit" value="Submit"  onclick="signup()" class="submitbutton">
-    </form>
-</div>
+     
+</section>
+  
  <script> 
 
 function signup(){
@@ -81,15 +103,8 @@ function signup(){
       window.open("login page.html")/*opens the target page*/
      } 
     }
-
-
-
-
 </script>    
+
 </body>
       
-     
-
-</html>
-               
-          
+</html>          
