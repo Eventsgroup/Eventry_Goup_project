@@ -4,65 +4,85 @@
 <title>EVENTY-Login</title>
 <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        <link rel="stylesheet" type="text/css" href="styling.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <!--<link rel="stylesheet" type="text/css" href="styling.css" />-->
         <meta name="descripition" content="EVENTY-Login" >
 </head>
 
-
-<div  class="sticky" >
-    
-    <div class="logo">
-        <img src="images\Screenshot (32).png" alt="logo" width="70" height="70"><div class="find"><h4> Find events</h4></div>
-    </div> 
-<br>
-
-
-    <nav >
-      <ul class="nav">
-        <a href="homepage.html"><b> HOME</b><a>
-        <a href="signup.html"><b>SIGNUP</b><a> 
-        <a href="aboutus.html"><b>ABOUT US</b><a> 
-        <a href="aboutus.html"><b>CONTACT US</b><a>
-        </ul>                       
-    </nav>
-  </div> 
-
-  <body class="x">
-    <div class="box">
-        <div class="form">
-            <h3> Log in</h3>
-            
-            <div class="inputbox">
-                <label for="Username">Username</label>
-                <input type="text" id="username" required>
-                
-            </div>
-            <div class="inputbox2">
-                <label for="Password">Password</label>
-                <input type="password" id="password" minlength="8" required>
-            
-        </div>
-        <div class="links"><br>
-                <a href="signup.html">Signup </a>
-        </div>
-        <br>
-        <input type="submit" onclick="login()"  value="login" class="submitbutton" >
+<header class="bg-danger">
+  <div  class="sticky  " >
+    <div  class="container-fluid">
+      <div class="row ">
+       <div class="col-sm-8" class="logo" style="margin-left: -15px;">
+           <img src="images\Screenshot (32).png" class="rounded-circle" alt="logo" width="70" height="70" > <div class="find"><h4> Find events</h4></div>
+         </div> 
         
-       
-    </div>
+        
+<nav class="col-sm-4">
+    <ul class="nav justify-content-end nav-flex-row nav-pills">
+       <li class="nav-item">
+    <a class="nav-link" href="homepage.html"><b>HOME</b></a></li>
+       <li class="nav-item">
+    <a class="nav-link" href="signup.html"><b>SIGNUP</b></a></li>
+       <li class="nav-item">
+     <a class="nav-link" href="aboutus.html"><b>ABOUT US</b></a></li>
+       <li class="nav-item">
+      <a class="nav-link" href="aboutus.html"><b>CONTACT US</b></a></li>
+       </ul>                     
+       </nav> </div>
+  </div>
+  </div>  
+  </header>
+
+  <body class="bg-info" >
+    <section class="vh-100 "  >
+      <div class="container ">
+        <div class="row d-flex justify-content-center align-items-center h-100 bg-dark">
+          <div class="col-10 col-md-8 col-lg-6 col-xl-5">
+            
+              <div class="card-body p-5 text-center">
+    
+                <h3 class="mb-5">Log in</h3>
+    <br>
+                <div class="form-outline mb-4">
+                  <input type="username" id="username" placeholder="username" required class="form-control form-control-lg" />
+                  <label class="form-label" for="username">Username</label>
+                </div>
+    <br>
+        <div class="form-outline mb-4">
+           <input type="password" id="password" placeholder="password" minlength="8" required class="form-control form-control-lg" />
+           <label class="form-label" for="password">Password</label>
+          </div>
+    
+  <br>      
+        <a class="links"style="color: blue"href="signup.html">Signup </a>
+               
+          <br>
+          <br>
+          <input type="submit" onclick="login()" class="btn btn-primary btn-lg btn-block"  value="Login" class="submitbutton" >
+                
+    
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
 
   
- <script>
+<script>
 
 function login(){
     const username = document.getElementById("username").value;
     
     const password = document.getElementById("password").value;
-   
+  
       if(username==""){
         alert("No username entered");
-  
+       
       }else if(password==""){
         alert("No password entered");
       }else{
@@ -71,11 +91,9 @@ function login(){
      }
    }    
  
- </script>
+</script>
 </body>
 
 
 
-</html>
-         
-    
+</html>   
